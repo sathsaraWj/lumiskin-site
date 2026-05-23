@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Terms and Conditions | Lumiskin</title>
+  <meta name="description" content="Lumiskin Terms and Conditions — the rules and guidelines that govern your use of the Lumiskin skincare app." />
+  <meta name="google-site-verification" content="google8a4953407d40c451" />
+  <meta name="google-site-verification" content="SslOg2Nx-gB8LZupZd6rhtCJTpEH8Xry3HF7loDP4Jc" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --purple:      #8427e2;
+      --purple-dark: #5b1fa0;
+      --purple-soft: #f3ecfd;
+      --purple-mid:  #ede8f9;
+      --ink:         #1f1b24;
+      --sage:        #6b5e75;
+      --muted:       #9b8fa8;
+      --border:      #e8ddf5;
+      --bg:          #faf7ff;
+      --white:       #ffffff;
+      --radius-sm:   10px;
+      --radius-md:   18px;
+      --radius-lg:   28px;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.7;
+      font-size: 16px;
+    }
+
+    /* ── Header ─────────────────────────────────────────────────────────── */
+    header {
+      background: linear-gradient(135deg, #18055a 0%, #5b1fa0 55%, #8427e2 100%);
+      padding: 64px 24px 56px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    header::before {
+      content: "";
+      position: absolute;
+      top: -60px; right: -60px;
+      width: 260px; height: 260px;
+      border-radius: 50%;
+      background: rgba(196, 168, 255, 0.12);
+      pointer-events: none;
+    }
+
+    header::after {
+      content: "";
+      position: absolute;
+      bottom: -40px; left: -40px;
+      width: 180px; height: 180px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.06);
+      pointer-events: none;
+    }
+
+    .header-inner { position: relative; z-index: 1; max-width: 680px; margin: 0 auto; }
+
+    .logo {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 24px;
+      text-decoration: none;
+    }
+
+    .logo-icon {
+      width: 40px; height: 40px;
+      border-radius: 12px;
+      background: rgba(255, 255, 255, 0.18);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 20px;
+    }
+
+    .logo-text {
+      font-size: 18px;
+      font-weight: 700;
+      color: #ffffff;
+      letter-spacing: 0.5px;
+    }
+
+    header h1 {
+      font-size: clamp(28px, 5vw, 42px);
+      font-weight: 700;
+      color: #ffffff;
+      line-height: 1.2;
+      margin-bottom: 14px;
+    }
+
+    header p {
+      color: rgba(255, 255, 255, 0.72);
+      font-size: 15px;
+      line-height: 1.6;
+    }
+
+    .effective-badge {
+      display: inline-block;
+      margin-top: 20px;
+      background: rgba(255, 255, 255, 0.15);
+      border: 1px solid rgba(255, 255, 255, 0.22);
+      border-radius: 20px;
+      padding: 6px 18px;
+      font-size: 13px;
+      color: rgba(255, 255, 255, 0.85);
+      font-weight: 500;
+    }
+
+    /* ── Disclaimer banner ───────────────────────────────────────────────── */
+    .disclaimer-banner {
+      background: #fff8e1;
+      border-left: 4px solid #f59e0b;
+      padding: 14px 20px;
+      font-size: 13.5px;
+      color: #7c5c00;
+      line-height: 1.6;
+    }
+
+    .disclaimer-banner strong { color: #5c4000; }
+
+    /* ── Layout ──────────────────────────────────────────────────────────── */
+    .page-wrap {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 0 20px 80px;
+    }
+
+    /* ── TOC ─────────────────────────────────────────────────────────────── */
+    .toc {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 28px 32px;
+      margin: 44px 0 48px;
+      box-shadow: 0 2px 16px rgba(132, 39, 226, 0.06);
+    }
+
+    .toc h2 {
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 1.6px;
+      text-transform: uppercase;
+      color: var(--purple);
+      margin-bottom: 16px;
+    }
+
+    .toc ol {
+      padding-left: 20px;
+      display: grid;
+      gap: 6px;
+    }
+
+    .toc li { font-size: 14px; }
+
+    .toc a {
+      color: var(--sage);
+      text-decoration: none;
+      transition: color 0.15s;
+    }
+
+    .toc a:hover { color: var(--purple); text-decoration: underline; }
+
+    /* ── Sections ────────────────────────────────────────────────────────── */
+    section {
+      margin-bottom: 56px;
+      scroll-margin-top: 24px;
+    }
+
+    .section-number {
+      display: inline-block;
+      background: var(--purple-soft);
+      color: var(--purple);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 1.4px;
+      text-transform: uppercase;
+      padding: 4px 12px;
+      border-radius: 20px;
+      margin-bottom: 10px;
+    }
+
+    h2.section-title {
+      font-size: clamp(20px, 3.5vw, 26px);
+      font-weight: 700;
+      color: var(--ink);
+      margin-bottom: 16px;
+      line-height: 1.25;
+    }
+
+    h3 {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--ink);
+      margin: 24px 0 8px;
+    }
+
+    p { margin-bottom: 14px; color: var(--sage); font-size: 15px; }
+    p:last-child { margin-bottom: 0; }
+
+    ul, ol {
+      padding-left: 22px;
+      margin-bottom: 14px;
+    }
+
+    li {
+      color: var(--sage);
+      font-size: 15px;
+      margin-bottom: 7px;
+      line-height: 1.6;
+    }
+
+    li strong { color: var(--ink); }
+
+    a { color: var(--purple); }
+    a:hover { text-decoration: underline; }
+
+    /* ── Info cards ──────────────────────────────────────────────────────── */
+    .card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 24px 28px;
+      margin: 20px 0;
+      box-shadow: 0 1px 8px rgba(132, 39, 226, 0.05);
+    }
+
+    .card-purple {
+      background: var(--purple-soft);
+      border-color: rgba(132, 39, 226, 0.18);
+    }
+
+    .card-red {
+      background: #fff5f5;
+      border-color: rgba(224, 92, 92, 0.22);
+    }
+
+    .card-list {
+      list-style: none;
+      padding-left: 0;
+      margin: 0;
+    }
+
+    .card-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      margin-bottom: 10px;
+      font-size: 14.5px;
+    }
+
+    .card-list li::before {
+      content: "✦";
+      color: var(--purple);
+      font-size: 12px;
+      margin-top: 3px;
+      flex-shrink: 0;
+    }
+
+    .card-list.danger li::before {
+      content: "✕";
+      color: #c0392b;
+    }
+
+    /* ── Highlight block ─────────────────────────────────────────────────── */
+    .highlight {
+      border-left: 3px solid var(--purple);
+      background: var(--purple-mid);
+      border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+      padding: 16px 20px;
+      margin: 16px 0;
+    }
+
+    .highlight p { font-size: 14px; margin: 0; color: var(--purple-dark); font-weight: 500; }
+
+    .highlight-warning {
+      border-left-color: #f59e0b;
+      background: #fffbeb;
+    }
+
+    .highlight-warning p { color: #7c5c00; }
+
+    /* ── Feature grid ────────────────────────────────────────────────────── */
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 14px;
+      margin-top: 20px;
+    }
+
+    .feature-item {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      padding: 18px 20px;
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+    }
+
+    .feature-icon {
+      font-size: 22px;
+      flex-shrink: 0;
+      line-height: 1;
+      margin-top: 1px;
+    }
+
+    .feature-label {
+      font-size: 13.5px;
+      font-weight: 600;
+      color: var(--ink);
+      margin-bottom: 3px;
+    }
+
+    .feature-desc {
+      font-size: 12.5px;
+      color: var(--muted);
+      line-height: 1.5;
+    }
+
+    /* ── Contact card ────────────────────────────────────────────────────── */
+    .contact-card {
+      background: linear-gradient(135deg, #18055a 0%, #8427e2 100%);
+      border-radius: var(--radius-lg);
+      padding: 36px 36px;
+      text-align: center;
+      color: #fff;
+    }
+
+    .contact-card h3 { color: #fff; margin: 0 0 10px; font-size: 20px; }
+    .contact-card p { color: rgba(255, 255, 255, 0.72); margin: 0 0 20px; font-size: 14px; }
+
+    .contact-email {
+      display: inline-block;
+      background: rgba(255, 255, 255, 0.15);
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      border-radius: 12px;
+      padding: 12px 24px;
+      color: #fff;
+      font-size: 15px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: background 0.15s;
+    }
+
+    .contact-email:hover {
+      background: rgba(255, 255, 255, 0.25);
+      text-decoration: none;
+    }
+
+    /* ── Divider ─────────────────────────────────────────────────────────── */
+    hr {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin: 48px 0;
+    }
+
+    /* ── Footer ──────────────────────────────────────────────────────────── */
+    footer {
+      background: #1a0d2e;
+      padding: 36px 24px;
+      text-align: center;
+    }
+
+    .footer-logo {
+      font-size: 17px;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 8px;
+    }
+
+    .footer-tagline {
+      font-size: 13px;
+      color: rgba(255, 255, 255, 0.40);
+      margin-bottom: 20px;
+    }
+
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-bottom: 24px;
+    }
+
+    .footer-links a {
+      font-size: 13px;
+      color: rgba(255, 255, 255, 0.55);
+      text-decoration: none;
+    }
+
+    .footer-links a:hover { color: #fff; }
+
+    .footer-copy {
+      font-size: 12.5px;
+      color: rgba(255, 255, 255, 0.30);
+    }
+
+    /* ── Responsive ──────────────────────────────────────────────────────── */
+    @media (max-width: 600px) {
+      header { padding: 48px 20px 40px; }
+      .toc { padding: 20px; }
+      .card { padding: 18px 20px; }
+      .contact-card { padding: 28px 20px; }
+      .feature-grid { grid-template-columns: 1fr 1fr; }
+    }
+
+    @media (max-width: 400px) {
+      .feature-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ── Header ──────────────────────────────────────────────────────────── -->
+  <header>
+    <div class="header-inner">
+      <a href="#" class="logo">
+        <span class="logo-icon">✦</span>
+        <span class="logo-text">Lumiskin</span>
+      </a>
+      <h1>Terms and Conditions</h1>
+      <p>Please read these terms carefully before creating a Lumiskin account.<br>By using the app, you agree to be bound by them.</p>
+      <span class="effective-badge">Last updated: April 2026</span>
+    </div>
+  </header>
+
+  <!-- ── Disclaimer banner ────────────────────────────────────────────────── -->
+  <div class="disclaimer-banner">
+    <strong>Not medical advice:</strong> Lumiskin is a cosmetic skincare guidance tool only. Nothing in this app or these terms constitutes medical advice, diagnosis, or treatment. Always consult a qualified healthcare provider for skin health concerns.
+  </div>
+
+  <!-- ── Body ────────────────────────────────────────────────────────────── -->
+  <div class="page-wrap">
+
+    <!-- Table of Contents -->
+    <nav class="toc" aria-label="Table of contents">
+      <h2>Contents</h2>
+      <ol>
+        <li><a href="#about">About Lumiskin</a></li>
+        <li><a href="#acceptance">Acceptance of Terms</a></li>
+        <li><a href="#not-medical">Not Medical Advice</a></li>
+        <li><a href="#accounts">User Accounts</a></li>
+        <li><a href="#camera">Camera and Photo Data</a></li>
+        <li><a href="#subscriptions">Subscriptions and Billing</a></li>
+        <li><a href="#free-trial">Free Trial</a></li>
+        <li><a href="#acceptable-use">Acceptable Use</a></li>
+        <li><a href="#intellectual-property">Intellectual Property</a></li>
+        <li><a href="#limitation">Limitation of Liability</a></li>
+        <li><a href="#privacy">Privacy</a></li>
+        <li><a href="#changes">Changes to These Terms</a></li>
+        <li><a href="#governing-law">Governing Law</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ol>
+    </nav>
+
+    <!-- 1. About Lumiskin -->
+    <section id="about">
+      <span class="section-number">01</span>
+      <h2 class="section-title">About Lumiskin</h2>
+      <p>
+        Lumiskin is a cosmetic skincare guidance application that uses AI-powered image analysis to
+        provide visible skin condition summaries, personalised AM/PM skincare routines, and progress
+        tracking over time.
+      </p>
+      <p>
+        Lumiskin is <strong>not a medical application</strong> and does not provide medical advice,
+        diagnosis, or treatment of any kind. All analysis results describe visible cosmetic indicators
+        only. They are based on photographic appearance and should not be interpreted as clinical
+        assessments or dermatological opinions.
+      </p>
+
+      <div class="feature-grid">
+        <div class="feature-item">
+          <span class="feature-icon">🔬</span>
+          <div>
+            <div class="feature-label">AI Skin Scans</div>
+            <div class="feature-desc">Visible cosmetic skin observations from face photos.</div>
+          </div>
+        </div>
+        <div class="feature-item">
+          <span class="feature-icon">💧</span>
+          <div>
+            <div class="feature-label">Personalised Routines</div>
+            <div class="feature-desc">Adaptive AM/PM skincare routines based on your scan results.</div>
+          </div>
+        </div>
+        <div class="feature-item">
+          <span class="feature-icon">📈</span>
+          <div>
+            <div class="feature-label">Progress Tracking</div>
+            <div class="feature-desc">Compare scans over time to see how your skin changes.</div>
+          </div>
+        </div>
+        <div class="feature-item">
+          <span class="feature-icon">🧴</span>
+          <div>
+            <div class="feature-label">Ingredient Checker</div>
+            <div class="feature-desc">Check your skincare products for conflicts and concerns.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. Acceptance of Terms -->
+    <section id="acceptance">
+      <span class="section-number">02</span>
+      <h2 class="section-title">Acceptance of Terms</h2>
+      <p>
+        By creating a Lumiskin account, downloading the app, or using any feature of the service,
+        you confirm that you have read, understood, and agree to these Terms and Conditions and our
+        <a href="privacy-policy.html">Privacy Policy</a>.
+      </p>
+      <p>You also confirm that:</p>
+      <div class="card card-purple">
+        <ul class="card-list">
+          <li>You are at least <strong>16 years of age</strong> (or the applicable minimum age in your jurisdiction).</li>
+          <li>You have full legal capacity to enter into a binding agreement.</li>
+          <li>You agree to our Privacy Policy, which is incorporated into these terms by reference.</li>
+          <li>You will use the app only for its intended cosmetic guidance purposes.</li>
+          <li>If you are using the app on behalf of an organisation, you have authority to bind that organisation to these terms.</li>
+        </ul>
+      </div>
+      <p>
+        If you do not agree to these terms, you must not create an account or use the Lumiskin
+        application.
+      </p>
+    </section>
+
+    <!-- 3. Not Medical Advice -->
+    <section id="not-medical">
+      <span class="section-number">03</span>
+      <h2 class="section-title">Not Medical Advice</h2>
+      <div class="highlight highlight-warning">
+        <p>
+          Lumiskin is a <strong>cosmetic tool only</strong>. Nothing in the app constitutes medical
+          advice, and no content should be used as a substitute for professional medical or
+          dermatological care.
+        </p>
+      </div>
+      <p>
+        If you have concerns about a skin condition — particularly any lesion, growth, discolouration,
+        or symptom that causes pain, bleeding, or rapid change — consult a qualified healthcare
+        provider immediately. Do not rely on Lumiskin to assess, diagnose, or monitor any medical
+        skin condition.
+      </p>
+      <p>
+        AI-generated skin summaries and routines are conservative estimates based on visible
+        photographic patterns. Their accuracy can be affected by lighting conditions, camera quality,
+        skin tone, facial hair, and other factors. Results may be incomplete or incorrect.
+      </p>
+      <p>
+        By using Lumiskin, you acknowledge and accept these limitations and agree that Lumiskin and
+        its operators are not liable for any harm, medical decision, or outcome arising from reliance
+        on the app's output.
+      </p>
+    </section>
+
+    <!-- 4. User Accounts -->
+    <section id="accounts">
+      <span class="section-number">04</span>
+      <h2 class="section-title">User Accounts</h2>
+      <p>
+        To access the full features of Lumiskin, you must create an account using a valid email
+        address. You are responsible for your account and must keep your credentials secure.
+      </p>
+
+      <h3>Your Responsibilities</h3>
+      <div class="card">
+        <ul class="card-list">
+          <li><strong>Security:</strong> Keep your password confidential and do not share your account with others.</li>
+          <li><strong>Accuracy:</strong> Provide accurate and complete information when registering and updating your profile.</li>
+          <li><strong>Activity:</strong> You are responsible for all activity that occurs under your account, whether or not authorised by you.</li>
+          <li><strong>Notification:</strong> Notify us immediately at <a href="mailto:sathsara2000@gmail.com">sathsara2000@gmail.com</a> if you suspect unauthorised use of your account.</li>
+        </ul>
+      </div>
+
+      <h3>Account Termination</h3>
+      <p>
+        We reserve the right to suspend or terminate accounts that violate these terms, are used
+        for unlawful or harmful purposes, or are found to be fraudulent. You may delete your own
+        account at any time from the Settings section of the app.
+      </p>
+      <p>
+        Account deletion is permanent and cannot be undone. All scan history, progress data, and
+        personal information will be removed from our systems.
+      </p>
+    </section>
+
+    <!-- 5. Camera and Photo Data -->
+    <section id="camera">
+      <span class="section-number">05</span>
+      <h2 class="section-title">Camera and Photo Data</h2>
+      <p>
+        Lumiskin requests access to your device camera solely to capture face scan photos. By granting
+        camera permission, you consent to the following:
+      </p>
+      <div class="card">
+        <ul class="card-list">
+          <li><strong>Capture:</strong> The app captures a selfie photo when you initiate a skin scan.</li>
+          <li><strong>Processing:</strong> Photos are cropped to your face area and compressed on-device before any upload.</li>
+          <li><strong>Upload:</strong> Processed photos may be uploaded to secure cloud storage (Cloudinary) to enable AI analysis.</li>
+          <li><strong>Analysis:</strong> The photo URL is sent to Anthropic's Claude API to generate visible cosmetic skin observations.</li>
+          <li><strong>Storage:</strong> Scan photos may be stored for up to 90 days to support progress comparison features.</li>
+          <li><strong>Deletion:</strong> You can delete your stored scan photos at any time from the app or by deleting your account.</li>
+        </ul>
+      </div>
+      <div class="highlight">
+        <p>
+          We do <strong>not</strong> sell your photos, use them to train third-party AI models without
+          your explicit consent, or use them for identity recognition, biometric profiling, or any
+          purpose other than skincare analysis.
+        </p>
+      </div>
+    </section>
+
+    <!-- 6. Subscriptions and Billing -->
+    <section id="subscriptions">
+      <span class="section-number">06</span>
+      <h2 class="section-title">Subscriptions and Billing</h2>
+      <p>
+        Lumiskin offers a paid subscription plan — <strong>Lumiskin Pro</strong> — at
+        <strong>$12.99/month</strong> (plus applicable tax). Subscriptions are processed through the
+        Google Play Store (Android) or Apple App Store (iOS). By subscribing, you agree to the
+        following:
+      </p>
+
+      <h3>Billing</h3>
+      <div class="card">
+        <ul class="card-list">
+          <li>You authorise the relevant app store to charge your linked payment method on a recurring monthly basis.</li>
+          <li>Subscriptions automatically renew at the end of each billing period unless cancelled.</li>
+          <li>To avoid being charged for the next period, you must cancel at least <strong>24 hours before</strong> the renewal date.</li>
+          <li>Prices are shown in USD. Local currency and tax may vary by region.</li>
+          <li>We reserve the right to change subscription pricing with reasonable prior notice. Price changes take effect at your next renewal.</li>
+        </ul>
+      </div>
+
+      <h3>Cancellation</h3>
+      <p>
+        You can cancel your subscription at any time through your device's subscription management
+        settings:
+      </p>
+      <ul>
+        <li><strong>Android:</strong> Google Play Store → Profile → Payments & subscriptions → Subscriptions → Lumiskin</li>
+        <li><strong>iOS:</strong> Settings → [Your Name] → Subscriptions → Lumiskin</li>
+      </ul>
+      <p>
+        Cancelling stops future charges. You retain access to Pro features until the end of the
+        current billing period. We do not provide partial refunds for unused subscription time.
+      </p>
+
+      <h3>Refunds</h3>
+      <p>
+        All refund requests are handled by the respective app store (Google Play or Apple App Store)
+        under their own refund policies. Lumiskin does not process refunds directly. Please contact
+        the relevant app store support if you believe a charge was made in error.
+      </p>
+
+      <h3>Account Deletion and Active Subscriptions</h3>
+      <div class="highlight highlight-warning">
+        <p>
+          Deleting your Lumiskin account does <strong>not automatically cancel</strong> your
+          subscription. You must cancel it separately through your app store subscription settings
+          before deleting your account to avoid future charges.
+        </p>
+      </div>
+    </section>
+
+    <!-- 7. Free Trial -->
+    <section id="free-trial">
+      <span class="section-number">07</span>
+      <h2 class="section-title">Free Trial</h2>
+      <p>
+        New subscribers may be eligible for a <strong>3-day free trial</strong> of Lumiskin Pro.
+        During the trial, you have full access to all Pro features at no charge.
+      </p>
+      <div class="card">
+        <ul class="card-list">
+          <li><strong>Eligibility:</strong> Free trials are available to first-time subscribers only. Previous subscribers are not eligible.</li>
+          <li><strong>No charge during trial:</strong> Your payment method is not charged during the trial period.</li>
+          <li><strong>Auto-renewal:</strong> At the end of the trial, your subscription automatically converts to a paid monthly plan at $12.99/month + applicable tax, unless cancelled before the trial ends.</li>
+          <li><strong>Cancellation:</strong> Cancel at any time before the trial ends through your app store subscription settings to avoid being charged.</li>
+          <li><strong>One trial per account:</strong> One free trial is available per Apple ID or Google account.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 8. Acceptable Use -->
+    <section id="acceptable-use">
+      <span class="section-number">08</span>
+      <h2 class="section-title">Acceptable Use</h2>
+      <p>
+        You agree to use Lumiskin only for its intended purpose of personal cosmetic skincare guidance.
+        The following uses are strictly prohibited:
+      </p>
+      <div class="card card-red">
+        <ul class="card-list danger">
+          <li>Using the app for any unlawful, harmful, abusive, or deceptive purpose.</li>
+          <li>Uploading images that are not genuine selfies of yourself.</li>
+          <li>Attempting to reverse-engineer, decompile, copy, or redistribute any part of the application or its underlying AI models.</li>
+          <li>Using automated tools, bots, or scripts to interact with the app.</li>
+          <li>Attempting to gain unauthorised access to other user accounts or our backend systems.</li>
+          <li>Using the app to collect data about, harass, or harm other individuals.</li>
+          <li>Interfering with the security, integrity, or availability of the app or its servers.</li>
+          <li>Reselling, sublicensing, or commercially exploiting any part of the Lumiskin service.</li>
+          <li>Making false or misleading claims about the app's features, capabilities, or results.</li>
+        </ul>
+      </div>
+      <p>
+        Violations may result in immediate account suspension or termination without notice. We
+        reserve the right to report suspected unlawful activity to appropriate authorities.
+      </p>
+    </section>
+
+    <!-- 9. Intellectual Property -->
+    <section id="intellectual-property">
+      <span class="section-number">09</span>
+      <h2 class="section-title">Intellectual Property</h2>
+      <p>
+        All content, design, code, branding, trademarks, and AI-powered features within Lumiskin are
+        the intellectual property of Lumiskin and its licensors and are protected by applicable
+        copyright, trademark, and other intellectual property laws.
+      </p>
+      <p>
+        By accepting these terms, you are granted a limited, personal, non-exclusive, non-transferable,
+        revocable licence to use the app for your own personal, non-commercial skincare guidance
+        purposes only. This licence does not include any right to:
+      </p>
+      <ul>
+        <li>Copy, modify, or distribute any part of the app or its content.</li>
+        <li>Create derivative works based on the app or its features.</li>
+        <li>Use Lumiskin's branding or trademarks without prior written consent.</li>
+        <li>Use the app or its output for commercial purposes.</li>
+      </ul>
+      <p>
+        Your scan results, photos, and personal data remain your own. You grant Lumiskin a limited
+        licence to store and process this data solely to deliver the services described in these terms.
+      </p>
+    </section>
+
+    <!-- 10. Limitation of Liability -->
+    <section id="limitation">
+      <span class="section-number">10</span>
+      <h2 class="section-title">Limitation of Liability</h2>
+      <p>
+        To the fullest extent permitted by applicable law, Lumiskin, its operators, affiliates,
+        employees, and licensors shall not be liable for any of the following, whether arising from
+        contract, tort, negligence, or otherwise:
+      </p>
+      <div class="card">
+        <ul class="card-list">
+          <li>Any inaccuracies, errors, or omissions in AI-generated skin summaries, routine suggestions, or ingredient analysis.</li>
+          <li>Any adverse skin reactions, allergic responses, or harm resulting from following recommendations made by the app.</li>
+          <li>Reliance on the app's output for any medical, clinical, or health-related decision.</li>
+          <li>Loss of data, scan history, or account content due to technical failure, account deletion, or service interruption.</li>
+          <li>Any indirect, incidental, special, consequential, or punitive damages of any kind.</li>
+          <li>Loss of revenue, profits, goodwill, or business arising from use of or inability to use the app.</li>
+        </ul>
+      </div>
+      <p>
+        The app is provided <strong>"as is"</strong> and <strong>"as available"</strong> without any
+        warranties of any kind, express or implied, including but not limited to warranties of
+        merchantability, fitness for a particular purpose, or non-infringement.
+      </p>
+      <p>
+        Where liability cannot be excluded by law, our total liability to you for any claim shall not
+        exceed the amount you paid for the service in the 12 months preceding the claim, or $50 USD,
+        whichever is greater.
+      </p>
+    </section>
+
+    <!-- 11. Privacy -->
+    <section id="privacy">
+      <span class="section-number">11</span>
+      <h2 class="section-title">Privacy</h2>
+      <p>
+        Your privacy is important to us. Our <a href="privacy-policy.html">Privacy Policy</a> explains
+        in full what data we collect, how we use it, who we share it with, and the rights you have
+        over your information. The Privacy Policy is incorporated into these Terms and Conditions by
+        reference.
+      </p>
+      <div class="card card-purple">
+        <ul class="card-list">
+          <li>We collect scan metadata, skin summaries, and account information to deliver the service.</li>
+          <li>Analytics data is collected in anonymised form to improve the app. You can opt out at any time.</li>
+          <li>We do not sell your personal data or face photos to third parties.</li>
+          <li>You can export or delete your data at any time from within the app.</li>
+          <li>Face photos are used solely for cosmetic skin analysis and are never used for biometric identification.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 12. Changes to These Terms -->
+    <section id="changes">
+      <span class="section-number">12</span>
+      <h2 class="section-title">Changes to These Terms</h2>
+      <p>
+        We may update these Terms and Conditions from time to time to reflect changes in the app,
+        our business, or applicable law. When we make material changes, we will:
+      </p>
+      <ul>
+        <li>Update the "Last updated" date at the top of this page.</li>
+        <li>Notify you within the app where required or where the changes are significant.</li>
+      </ul>
+      <p>
+        Your continued use of Lumiskin after changes take effect constitutes your acceptance of the
+        updated terms. If you do not agree to the revised terms, you must stop using the app and
+        may delete your account at any time.
+      </p>
+    </section>
+
+    <!-- 13. Governing Law -->
+    <section id="governing-law">
+      <span class="section-number">13</span>
+      <h2 class="section-title">Governing Law</h2>
+      <p>
+        These Terms and Conditions are governed by and construed in accordance with applicable law.
+        Any disputes arising from these terms or your use of Lumiskin will be subject to the
+        exclusive jurisdiction of the relevant courts in the jurisdiction where the operator is
+        established.
+      </p>
+      <p>
+        If any provision of these terms is found to be invalid or unenforceable under applicable law,
+        that provision will be modified to the minimum extent necessary to make it enforceable, and
+        the remaining provisions will continue in full force and effect.
+      </p>
+      <p>
+        Failure by Lumiskin to enforce any right or provision in these terms shall not constitute
+        a waiver of that right or provision.
+      </p>
+    </section>
+
+    <hr />
+
+    <!-- 14. Contact -->
+    <section id="contact">
+      <span class="section-number">14</span>
+      <h2 class="section-title">Contact</h2>
+      <p>
+        If you have questions about these Terms and Conditions, wish to report a violation, or need
+        to contact us regarding your account or subscription, please reach out.
+      </p>
+      <div class="contact-card">
+        <h3>Get in touch</h3>
+        <p>We aim to respond to all enquiries within 5 business days.</p>
+        <a href="mailto:sathsara2000@gmail.com" class="contact-email">sathsara2000@gmail.com</a>
+        <p style="margin-top: 18px; font-size: 13px; color: rgba(255,255,255,0.45);">
+          Lumiskin · [Company Address]
+        </p>
+      </div>
+    </section>
+
+  </div><!-- /page-wrap -->
+
+  <!-- ── Footer ───────────────────────────────────────────────────────────── -->
+  <footer>
+    <div class="footer-logo">✦ Lumiskin</div>
+    <div class="footer-tagline">Visible skin guidance, transparently delivered.</div>
+    <div class="footer-links">
+      <a href="terms-of-service.html">Terms and Conditions</a>
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <a href="mailto:sathsara2000@gmail.com">Contact</a>
+    </div>
+    <div class="footer-copy">© 2026 Lumiskin. All rights reserved.</div>
+  </footer>
+
+</body>
+</html>

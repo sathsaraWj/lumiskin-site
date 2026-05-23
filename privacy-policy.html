@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy | Lumiskin</title>
+  <meta name="description" content="Lumiskin Privacy Policy — how we collect, use, and protect your personal data and face scan information." />
+  <meta name="google-site-verification" content="google8a4953407d40c451" />
+  <meta name="google-site-verification" content="SslOg2Nx-gB8LZupZd6rhtCJTpEH8Xry3HF7loDP4Jc" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --purple:      #8427e2;
+      --purple-dark: #5b1fa0;
+      --purple-soft: #f3ecfd;
+      --purple-mid:  #ede8f9;
+      --ink:         #1f1b24;
+      --sage:        #6b5e75;
+      --muted:       #9b8fa8;
+      --border:      #e8ddf5;
+      --bg:          #faf7ff;
+      --white:       #ffffff;
+      --radius-sm:   10px;
+      --radius-md:   18px;
+      --radius-lg:   28px;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.7;
+      font-size: 16px;
+    }
+
+    /* ── Header ─────────────────────────────────────────────────────────── */
+    header {
+      background: linear-gradient(135deg, #18055a 0%, #5b1fa0 55%, #8427e2 100%);
+      padding: 64px 24px 56px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    header::before {
+      content: "";
+      position: absolute;
+      top: -60px; right: -60px;
+      width: 260px; height: 260px;
+      border-radius: 50%;
+      background: rgba(196, 168, 255, 0.12);
+      pointer-events: none;
+    }
+
+    header::after {
+      content: "";
+      position: absolute;
+      bottom: -40px; left: -40px;
+      width: 180px; height: 180px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.06);
+      pointer-events: none;
+    }
+
+    .header-inner { position: relative; z-index: 1; max-width: 680px; margin: 0 auto; }
+
+    .logo {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 24px;
+      text-decoration: none;
+    }
+
+    .logo-icon {
+      width: 40px; height: 40px;
+      border-radius: 12px;
+      background: rgba(255, 255, 255, 0.18);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 20px;
+    }
+
+    .logo-text {
+      font-size: 18px;
+      font-weight: 700;
+      color: #ffffff;
+      letter-spacing: 0.5px;
+    }
+
+    header h1 {
+      font-size: clamp(28px, 5vw, 42px);
+      font-weight: 700;
+      color: #ffffff;
+      line-height: 1.2;
+      margin-bottom: 14px;
+    }
+
+    header p {
+      color: rgba(255, 255, 255, 0.72);
+      font-size: 15px;
+      line-height: 1.6;
+    }
+
+    .effective-badge {
+      display: inline-block;
+      margin-top: 20px;
+      background: rgba(255, 255, 255, 0.15);
+      border: 1px solid rgba(255, 255, 255, 0.22);
+      border-radius: 20px;
+      padding: 6px 18px;
+      font-size: 13px;
+      color: rgba(255, 255, 255, 0.85);
+      font-weight: 500;
+    }
+
+    /* ── Disclaimer banner ───────────────────────────────────────────────── */
+    .disclaimer-banner {
+      background: #fff8e1;
+      border-left: 4px solid #f59e0b;
+      padding: 14px 20px;
+      font-size: 13.5px;
+      color: #7c5c00;
+      line-height: 1.6;
+    }
+
+    .disclaimer-banner strong { color: #5c4000; }
+
+    /* ── Layout ──────────────────────────────────────────────────────────── */
+    .page-wrap {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 0 20px 80px;
+    }
+
+    /* ── TOC ─────────────────────────────────────────────────────────────── */
+    .toc {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 28px 32px;
+      margin: 44px 0 48px;
+      box-shadow: 0 2px 16px rgba(132, 39, 226, 0.06);
+    }
+
+    .toc h2 {
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 1.6px;
+      text-transform: uppercase;
+      color: var(--purple);
+      margin-bottom: 16px;
+    }
+
+    .toc ol {
+      padding-left: 20px;
+      display: grid;
+      gap: 6px;
+    }
+
+    .toc li { font-size: 14px; }
+
+    .toc a {
+      color: var(--sage);
+      text-decoration: none;
+      transition: color 0.15s;
+    }
+
+    .toc a:hover { color: var(--purple); text-decoration: underline; }
+
+    /* ── Sections ────────────────────────────────────────────────────────── */
+    section {
+      margin-bottom: 56px;
+      scroll-margin-top: 24px;
+    }
+
+    .section-number {
+      display: inline-block;
+      background: var(--purple-soft);
+      color: var(--purple);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 1.4px;
+      text-transform: uppercase;
+      padding: 4px 12px;
+      border-radius: 20px;
+      margin-bottom: 10px;
+    }
+
+    h2.section-title {
+      font-size: clamp(20px, 3.5vw, 26px);
+      font-weight: 700;
+      color: var(--ink);
+      margin-bottom: 16px;
+      line-height: 1.25;
+    }
+
+    h3 {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--ink);
+      margin: 24px 0 8px;
+    }
+
+    p { margin-bottom: 14px; color: var(--sage); font-size: 15px; }
+    p:last-child { margin-bottom: 0; }
+
+    ul, ol {
+      padding-left: 22px;
+      margin-bottom: 14px;
+    }
+
+    li {
+      color: var(--sage);
+      font-size: 15px;
+      margin-bottom: 7px;
+      line-height: 1.6;
+    }
+
+    li strong { color: var(--ink); }
+
+    a { color: var(--purple); }
+    a:hover { text-decoration: underline; }
+
+    /* ── Info cards ──────────────────────────────────────────────────────── */
+    .card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 24px 28px;
+      margin: 20px 0;
+      box-shadow: 0 1px 8px rgba(132, 39, 226, 0.05);
+    }
+
+    .card-purple {
+      background: var(--purple-soft);
+      border-color: rgba(132, 39, 226, 0.18);
+    }
+
+    .card-list {
+      list-style: none;
+      padding-left: 0;
+      margin: 0;
+    }
+
+    .card-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      margin-bottom: 10px;
+      font-size: 14.5px;
+    }
+
+    .card-list li::before {
+      content: "✦";
+      color: var(--purple);
+      font-size: 12px;
+      margin-top: 3px;
+      flex-shrink: 0;
+    }
+
+    /* ── Third-party service cards ───────────────────────────────────────── */
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 16px;
+      margin-top: 20px;
+    }
+
+    .service-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      padding: 18px 20px;
+    }
+
+    .service-name {
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--ink);
+      margin-bottom: 6px;
+    }
+
+    .service-role {
+      font-size: 12.5px;
+      color: var(--muted);
+      line-height: 1.5;
+      margin: 0;
+    }
+
+    .service-link {
+      display: inline-block;
+      margin-top: 8px;
+      font-size: 12px;
+      color: var(--purple);
+      text-decoration: none;
+    }
+
+    .service-link:hover { text-decoration: underline; }
+
+    /* ── Highlight block ─────────────────────────────────────────────────── */
+    .highlight {
+      border-left: 3px solid var(--purple);
+      background: var(--purple-mid);
+      border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+      padding: 16px 20px;
+      margin: 16px 0;
+    }
+
+    .highlight p { font-size: 14px; margin: 0; color: var(--purple-dark); font-weight: 500; }
+
+    /* ── Rights grid ─────────────────────────────────────────────────────── */
+    .rights-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 14px;
+      margin-top: 20px;
+    }
+
+    .right-item {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      padding: 16px 18px;
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+    }
+
+    .right-icon {
+      font-size: 20px;
+      flex-shrink: 0;
+      line-height: 1;
+      margin-top: 1px;
+    }
+
+    .right-label {
+      font-size: 13.5px;
+      font-weight: 600;
+      color: var(--ink);
+      margin-bottom: 3px;
+    }
+
+    .right-desc {
+      font-size: 12.5px;
+      color: var(--muted);
+      line-height: 1.5;
+    }
+
+    /* ── Contact card ────────────────────────────────────────────────────── */
+    .contact-card {
+      background: linear-gradient(135deg, #18055a 0%, #8427e2 100%);
+      border-radius: var(--radius-lg);
+      padding: 36px 36px;
+      text-align: center;
+      color: #fff;
+    }
+
+    .contact-card h3 { color: #fff; margin: 0 0 10px; font-size: 20px; }
+
+    .contact-card p { color: rgba(255, 255, 255, 0.72); margin: 0 0 20px; font-size: 14px; }
+
+    .contact-email {
+      display: inline-block;
+      background: rgba(255, 255, 255, 0.15);
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      border-radius: 12px;
+      padding: 12px 24px;
+      color: #fff;
+      font-size: 15px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: background 0.15s;
+    }
+
+    .contact-email:hover {
+      background: rgba(255, 255, 255, 0.25);
+      text-decoration: none;
+    }
+
+    /* ── Divider ─────────────────────────────────────────────────────────── */
+    hr {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin: 48px 0;
+    }
+
+    /* ── Footer ──────────────────────────────────────────────────────────── */
+    footer {
+      background: #1a0d2e;
+      padding: 36px 24px;
+      text-align: center;
+    }
+
+    .footer-logo {
+      font-size: 17px;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 8px;
+    }
+
+    .footer-tagline {
+      font-size: 13px;
+      color: rgba(255, 255, 255, 0.40);
+      margin-bottom: 20px;
+    }
+
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-bottom: 24px;
+    }
+
+    .footer-links a {
+      font-size: 13px;
+      color: rgba(255, 255, 255, 0.55);
+      text-decoration: none;
+    }
+
+    .footer-links a:hover { color: #fff; }
+
+    .footer-copy {
+      font-size: 12.5px;
+      color: rgba(255, 255, 255, 0.30);
+    }
+
+    /* ── Responsive ──────────────────────────────────────────────────────── */
+    @media (max-width: 600px) {
+      header { padding: 48px 20px 40px; }
+      .toc { padding: 20px; }
+      .card { padding: 18px 20px; }
+      .contact-card { padding: 28px 20px; }
+      .service-grid { grid-template-columns: 1fr 1fr; }
+      .rights-grid { grid-template-columns: 1fr; }
+    }
+
+    @media (max-width: 400px) {
+      .service-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ── Header ──────────────────────────────────────────────────────────── -->
+  <header>
+    <div class="header-inner">
+      <a href="#" class="logo">
+        <span class="logo-icon">✦</span>
+        <span class="logo-text">Lumiskin</span>
+      </a>
+      <h1>Privacy Policy</h1>
+      <p>We take your privacy seriously. This policy explains what data we collect,<br>how we use it, and the choices you have.</p>
+      <span class="effective-badge">Effective Date: [Add Date]</span>
+    </div>
+  </header>
+
+  <!-- ── Disclaimer banner ────────────────────────────────────────────────── -->
+  <div class="disclaimer-banner">
+    <strong>Note:</strong> This document is an application privacy policy provided for informational purposes.
+    It does not constitute legal advice. If you have legal questions about data privacy, please consult a qualified attorney.
+  </div>
+
+  <!-- ── Body ────────────────────────────────────────────────────────────── -->
+  <div class="page-wrap">
+
+    <!-- Table of Contents -->
+    <nav class="toc" aria-label="Table of contents">
+      <h2>Contents</h2>
+      <ol>
+        <li><a href="#introduction">Introduction</a></li>
+        <li><a href="#information-we-collect">Information We Collect</a></li>
+        <li><a href="#how-we-use">How We Use Your Information</a></li>
+        <li><a href="#image-data">Image and Face Data Handling</a></li>
+        <li><a href="#guest-storage">Local Storage for Guest Users</a></li>
+        <li><a href="#third-party">Third-Party Services</a></li>
+        <li><a href="#retention">Data Retention</a></li>
+        <li><a href="#rights">Your Rights</a></li>
+        <li><a href="#children">Children's Privacy</a></li>
+        <li><a href="#changes">Changes to This Policy</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ol>
+    </nav>
+
+    <!-- 1. Introduction -->
+    <section id="introduction">
+      <span class="section-number">01</span>
+      <h2 class="section-title">Introduction</h2>
+      <p>
+        Lumiskin ("we," "our," or "us") is a skincare guidance application that uses face photo analysis
+        to provide visible cosmetic observations, adaptive skincare routines, and progress tracking.
+        This Privacy Policy describes how we collect, use, store, and protect information when you use
+        the Lumiskin mobile application.
+      </p>
+      <p>
+        By using Lumiskin, you agree to the practices described in this policy. If you do not agree,
+        please discontinue use of the app.
+      </p>
+      <div class="highlight">
+        <p>
+          Lumiskin provides <strong>cosmetic observations only</strong> — we do not diagnose skin
+          conditions, medical disorders, or health issues. All analysis is for personal skincare
+          guidance purposes.
+        </p>
+      </div>
+    </section>
+
+    <!-- 2. Information We Collect -->
+    <section id="information-we-collect">
+      <span class="section-number">02</span>
+      <h2 class="section-title">Information We Collect</h2>
+      <p>We collect different types of information depending on how you use the app.</p>
+
+      <h3>Account Information</h3>
+      <p>
+        When you create an account, we collect your email address, display name, and optionally your
+        skincare goals, skin sensitivity level, and routine preferences. This information is stored
+        securely in our database to personalise your experience.
+      </p>
+
+      <h3>Face Scan Photos</h3>
+      <p>
+        When you perform a skin scan, the app captures a selfie photo of your face. This photo is
+        processed locally on your device (cropped, masked, and compressed) before being uploaded to
+        our image hosting service for AI analysis. Photos are used solely for skin analysis.
+      </p>
+
+      <h3>Skin Analysis Results</h3>
+      <p>
+        After each scan, AI-generated skin observations (such as visible acne, redness, texture, and
+        tone) are stored alongside your scan record. These results are used to generate routines and
+        track your progress over time.
+      </p>
+
+      <h3>App Usage Analytics</h3>
+      <p>
+        We collect anonymised usage data (such as which features you use and how often) to improve
+        the app. This data does not include your photos or analysis results.
+      </p>
+
+      <h3>Subscription and Payment Status</h3>
+      <p>
+        We collect your subscription tier (Free, Plus, or Pro) and subscription status via our
+        payment provider. We do not store your payment card details — these are handled entirely
+        by the payment processor.
+      </p>
+
+      <div class="card card-purple">
+        <ul class="card-list">
+          <li>Email address and display name</li>
+          <li>Skincare preferences and goals (optional)</li>
+          <li>Face photos (for analysis only)</li>
+          <li>Scan results and skin metrics</li>
+          <li>Anonymised app usage analytics</li>
+          <li>Subscription plan and status</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 3. How We Use Your Information -->
+    <section id="how-we-use">
+      <span class="section-number">03</span>
+      <h2 class="section-title">How We Use Your Information</h2>
+
+      <div class="card">
+        <ul class="card-list">
+          <li><strong>Skin analysis:</strong> To generate AI-powered visible skin observations from your face photos.</li>
+          <li><strong>Routine generation:</strong> To create personalised AM/PM skincare routines based on your scan results and preferences.</li>
+          <li><strong>Progress tracking:</strong> To compare scan results over time and show your skin's progress.</li>
+          <li><strong>Account management:</strong> To authenticate you, manage your subscription, and restore your data across devices.</li>
+          <li><strong>App improvement:</strong> To understand how features are used and improve the product via anonymised analytics.</li>
+          <li><strong>Notifications:</strong> To send optional daily scan and routine reminders (only if you grant permission).</li>
+        </ul>
+      </div>
+
+      <p>
+        We do not sell, rent, or trade your personal information or face photos to any third party
+        for marketing, advertising, or commercial purposes.
+      </p>
+    </section>
+
+    <!-- 4. Image and Face Data Handling -->
+    <section id="image-data">
+      <span class="section-number">04</span>
+      <h2 class="section-title">Image and Face Data Handling</h2>
+      <p>
+        Because Lumiskin captures face photos, we want to be especially transparent about how this
+        sensitive data is handled.
+      </p>
+
+      <h3>Photos Are Used Only for Skincare Analysis</h3>
+      <p>
+        Your face photos are used exclusively to generate skin condition observations. They are not
+        used for identity recognition, facial authentication, advertising targeting, or any purpose
+        unrelated to the analysis you requested.
+      </p>
+
+      <h3>Processing on Your Device</h3>
+      <p>
+        Before any photo leaves your device, it is cropped to your face area, an oval mask is applied,
+        and it is compressed to reduce file size. This pre-processing happens locally and is designed
+        to minimise unnecessary data transfer.
+      </p>
+
+      <h3>Upload to Cloudinary</h3>
+      <p>
+        Processed face photos may be uploaded to <strong>Cloudinary</strong>, a cloud media management
+        service, to generate a secure URL. This URL is used to pass the image to our AI analysis
+        service. Cloudinary is subject to its own privacy and security policies.
+      </p>
+
+      <h3>AI Analysis via Claude API</h3>
+      <p>
+        The image URL is sent to <strong>Anthropic's Claude API</strong> for visible skin analysis.
+        Claude generates observations about cosmetic skin indicators based solely on the image provided.
+        We do not instruct the AI to identify, authenticate, or re-identify any individual.
+      </p>
+
+      <h3>No Sale or Identity Use</h3>
+      <div class="highlight">
+        <p>
+          Your face photos are <strong>never sold</strong> to third parties and are <strong>never used
+          for identity recognition</strong>, biometric profiling, or surveillance purposes.
+        </p>
+      </div>
+    </section>
+
+    <!-- 5. Local Storage for Guest Users -->
+    <section id="guest-storage">
+      <span class="section-number">05</span>
+      <h2 class="section-title">Local Storage for Guest Users</h2>
+      <p>
+        Lumiskin offers a one-time free guest scan that does not require creating an account.
+        The following applies to guest users:
+      </p>
+
+      <div class="card">
+        <ul class="card-list">
+          <li><strong>Stored locally only:</strong> Guest scan results, captured image URI, date/time, skin metrics, and the next-allowed scan date are stored exclusively on your device using local app storage.</li>
+          <li><strong>No account sync:</strong> Guest data is never uploaded to our database or synced to any server.</li>
+          <li><strong>Deleted on login:</strong> When you create an account or log in, all guest local data is immediately deleted from your device. Guest scan results are not automatically imported into your account.</li>
+          <li><strong>21-day scan restriction:</strong> After completing a guest scan, a new guest scan is blocked for 21 days. The restriction date is stored locally. After 21 days, a new guest scan replaces all previous guest data.</li>
+          <li><strong>You can view your result:</strong> During the 21-day period, you can still open and view your saved guest scan result at any time without logging in.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 6. Third-Party Services -->
+    <section id="third-party">
+      <span class="section-number">06</span>
+      <h2 class="section-title">Third-Party Services</h2>
+      <p>
+        Lumiskin uses the following third-party services to deliver its features. Each service operates
+        under its own privacy policy, which we encourage you to review.
+      </p>
+
+      <div class="service-grid">
+        <div class="service-card">
+          <div class="service-name">Supabase</div>
+          <p class="service-role">Account authentication, database, and secure backend infrastructure.</p>
+          <a class="service-link" href="https://supabase.com/privacy" target="_blank" rel="noopener">Privacy Policy ↗</a>
+        </div>
+        <div class="service-card">
+          <div class="service-name">Cloudinary</div>
+          <p class="service-role">Secure cloud hosting for processed face photos used in AI analysis.</p>
+          <a class="service-link" href="https://cloudinary.com/privacy" target="_blank" rel="noopener">Privacy Policy ↗</a>
+        </div>
+        <div class="service-card">
+          <div class="service-name">Claude AI (Anthropic)</div>
+          <p class="service-role">AI model used to generate visible skin condition observations from photos.</p>
+          <a class="service-link" href="https://www.anthropic.com/privacy" target="_blank" rel="noopener">Privacy Policy ↗</a>
+        </div>
+        <div class="service-card">
+          <div class="service-name">RevenueCat</div>
+          <p class="service-role">Subscription management and in-app purchase processing.</p>
+          <a class="service-link" href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">Privacy Policy ↗</a>
+        </div>
+        <div class="service-card">
+          <div class="service-name">PostHog</div>
+          <p class="service-role">Anonymised product analytics to help us understand feature usage and improve the app.</p>
+          <a class="service-link" href="https://posthog.com/privacy" target="_blank" rel="noopener">Privacy Policy ↗</a>
+        </div>
+      </div>
+
+      <p style="margin-top: 20px;">
+        We do not share personally identifiable information with these providers beyond what is
+        necessary to deliver the service. We do not allow any of these providers to use your data
+        for their own advertising or marketing purposes.
+      </p>
+    </section>
+
+    <!-- 7. Data Retention -->
+    <section id="retention">
+      <span class="section-number">07</span>
+      <h2 class="section-title">Data Retention</h2>
+
+      <div class="card">
+        <ul class="card-list">
+          <li><strong>Account data:</strong> Retained for as long as your account is active. You may request deletion at any time.</li>
+          <li><strong>Scan results and metrics:</strong> Retained to support your progress history. Deleted when your account is deleted.</li>
+          <li><strong>Cloud-hosted images:</strong> Face photos hosted on Cloudinary may be automatically deleted after <strong>90 days</strong> to minimise long-term image storage. Scan metrics and analysis results are retained separately.</li>
+          <li><strong>Guest data:</strong> Stored only on your device and never sent to our servers. Deleted when you log in or when a new guest scan replaces it.</li>
+          <li><strong>Analytics data:</strong> Anonymised usage data may be retained for product analysis. It cannot be linked back to you personally.</li>
+        </ul>
+      </div>
+
+      <p>
+        When you delete your account through the app, we delete your profile, scan records, and
+        associated data from our database. Some residual anonymised data may remain in aggregated
+        analytics but cannot be used to identify you.
+      </p>
+    </section>
+
+    <!-- 8. User Rights -->
+    <section id="rights">
+      <span class="section-number">08</span>
+      <h2 class="section-title">Your Rights</h2>
+      <p>
+        Depending on your location, you may have the following rights regarding your personal data.
+        To exercise any of these rights, please contact us at
+        <a href="mailto:sathsara2000@gmail.com">sathsara2000@gmail.com</a>.
+      </p>
+
+      <div class="rights-grid">
+        <div class="right-item">
+          <span class="right-icon">👁</span>
+          <div>
+            <div class="right-label">Access</div>
+            <div class="right-desc">Request a copy of the personal data we hold about you.</div>
+          </div>
+        </div>
+        <div class="right-item">
+          <span class="right-icon">✏️</span>
+          <div>
+            <div class="right-label">Correction</div>
+            <div class="right-desc">Ask us to correct inaccurate or incomplete information.</div>
+          </div>
+        </div>
+        <div class="right-item">
+          <span class="right-icon">🗑</span>
+          <div>
+            <div class="right-label">Deletion</div>
+            <div class="right-desc">Request deletion of your account and associated personal data.</div>
+          </div>
+        </div>
+        <div class="right-item">
+          <span class="right-icon">📤</span>
+          <div>
+            <div class="right-label">Portability</div>
+            <div class="right-desc">Request your data in a portable, machine-readable format.</div>
+          </div>
+        </div>
+        <div class="right-item">
+          <span class="right-icon">⛔</span>
+          <div>
+            <div class="right-label">Object / Opt-out</div>
+            <div class="right-desc">Opt out of analytics data collection at any time in app settings.</div>
+          </div>
+        </div>
+        <div class="right-item">
+          <span class="right-icon">🔒</span>
+          <div>
+            <div class="right-label">Restriction</div>
+            <div class="right-desc">Ask us to restrict processing of your data in certain circumstances.</div>
+          </div>
+        </div>
+      </div>
+
+      <p style="margin-top: 20px;">
+        You can delete your account directly within the Lumiskin app (Settings → Account → Delete Account).
+        Account deletion is permanent and cannot be undone.
+      </p>
+    </section>
+
+    <!-- 9. Children's Privacy -->
+    <section id="children">
+      <span class="section-number">09</span>
+      <h2 class="section-title">Children's Privacy</h2>
+      <p>
+        Lumiskin is not intended for use by children under the age of <strong>13</strong> (or the
+        applicable minimum age in your jurisdiction). We do not knowingly collect personal information
+        from children under 13.
+      </p>
+      <p>
+        If you are a parent or guardian and believe your child has provided us with personal
+        information without your consent, please contact us immediately at
+        <a href="mailto:sathsara2000@gmail.com">sathsara2000@gmail.com</a> and we will take steps to
+        remove that information.
+      </p>
+    </section>
+
+    <!-- 10. Changes to This Policy -->
+    <section id="changes">
+      <span class="section-number">10</span>
+      <h2 class="section-title">Changes to This Policy</h2>
+      <p>
+        We may update this Privacy Policy from time to time to reflect changes in our practices,
+        technology, legal requirements, or other factors. When we make significant changes, we will:
+      </p>
+      <ul>
+        <li>Update the "Effective Date" at the top of this page.</li>
+        <li>Notify you within the app where required by law.</li>
+      </ul>
+      <p>
+        Your continued use of Lumiskin after any changes become effective constitutes your
+        acceptance of the updated policy. We encourage you to review this page periodically.
+      </p>
+    </section>
+
+    <hr />
+
+    <!-- 11. Contact Us -->
+    <section id="contact">
+      <span class="section-number">11</span>
+      <h2 class="section-title">Contact Us</h2>
+      <p>
+        If you have any questions, concerns, or requests regarding this Privacy Policy or how
+        we handle your data, please reach out to us.
+      </p>
+      <div class="contact-card">
+        <h3>Get in touch</h3>
+        <p>We aim to respond to all privacy-related enquiries within 5 business days.</p>
+        <a href="mailto:sathsara2000@gmail.com" class="contact-email">sathsara2000@gmail.com</a>
+        <p style="margin-top: 18px; font-size: 13px; color: rgba(255,255,255,0.45);">
+          Lumiskin · [Company Address]
+        </p>
+      </div>
+    </section>
+
+  </div><!-- /page-wrap -->
+
+  <!-- ── Footer ───────────────────────────────────────────────────────────── -->
+  <footer>
+    <div class="footer-logo">✦ Lumiskin</div>
+    <div class="footer-tagline">Visible skin guidance, privately handled.</div>
+    <div class="footer-links">
+      <a href="#introduction">Privacy Policy</a>
+      <a href="mailto:sathsara2000@gmail.com">Contact</a>
+    </div>
+    <div class="footer-copy">© 2026 Lumiskin. All rights reserved.</div>
+  </footer>
+
+</body>
+</html>
