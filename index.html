@@ -1199,8 +1199,6 @@
 
   <script>
     // ── Page router ───────────────────────────────────────────────────────────
-    const HOME_URL = 'https://sites.google.com/view/lumiskin-homepage/home';
-
     const PAGES = {
       privacy: document.getElementById('page-privacy'),
       terms:   document.getElementById('page-terms'),
@@ -1212,11 +1210,6 @@
     };
 
     function goTo(page, sectionId) {
-      if (page === 'home') {
-        window.location.href = HOME_URL;
-        return;
-      }
-
       // Close mobile nav
       navLinks.classList.remove('open');
 
@@ -1229,7 +1222,6 @@
       window.scrollTo(0, 0);
 
       if (sectionId) {
-        // Small delay so the page is visible before scrolling
         setTimeout(() => {
           const el = document.getElementById(sectionId);
           if (el) el.scrollIntoView({ behavior: 'smooth' });
@@ -1240,13 +1232,10 @@
     // ── Hash-based deep linking ───────────────────────────────────────────────
     function routeFromHash() {
       const hash = window.location.hash.slice(1);
-      if (!hash || hash === 'home') { window.location.href = HOME_URL; return; }
-      if (hash === 'privacy-policy') { goTo('privacy'); return; }
       if (hash === 'terms') { goTo('terms'); return; }
-      if (hash.startsWith('pp-')) { goTo('privacy', hash); return; }
       if (hash.startsWith('tos-')) { goTo('terms', hash); return; }
-      // Unknown hash — go back to homepage
-      window.location.href = HOME_URL;
+      if (hash.startsWith('pp-')) { goTo('privacy', hash); return; }
+      goTo('privacy');
     }
 
     window.addEventListener('hashchange', routeFromHash);
