@@ -1200,6 +1200,7 @@
   <script>
     // ── Page router ───────────────────────────────────────────────────────────
     const PAGES = {
+      home:    document.getElementById('page-home'),
       privacy: document.getElementById('page-privacy'),
       terms:   document.getElementById('page-terms'),
     };
@@ -1209,11 +1210,13 @@
       terms:   'Terms and Conditions | Lumiskin',
     };
 
+    // ── Mobile nav refs (must be declared before routeFromHash is called) ─────
+    const hamburger = document.getElementById('hamburger');
+    const navLinks  = document.getElementById('navLinks');
+
     function goTo(page, sectionId) {
-      // Close mobile nav
       navLinks.classList.remove('open');
 
-      // Show correct page
       Object.entries(PAGES).forEach(([key, el]) => {
         el.classList.toggle('active', key === page);
       });
@@ -1232,18 +1235,13 @@
     // ── Hash-based deep linking ───────────────────────────────────────────────
     function routeFromHash() {
       const hash = window.location.hash.slice(1);
-      if (hash === 'terms') { goTo('terms'); return; }
-      if (hash.startsWith('tos-')) { goTo('terms', hash); return; }
-      if (hash.startsWith('pp-')) { goTo('privacy', hash); return; }
-      goTo('privacy');
+      if (hash === 'terms' || hash.startsWith('tos-')) { goTo('terms', hash.startsWith('tos-') ? hash : null); return; }
+      if (hash === 'privacy' || hash.startsWith('pp-')) { goTo('privacy', hash.startsWith('pp-') ? hash : null); return; }
+      goTo('home');
     }
 
     window.addEventListener('hashchange', routeFromHash);
     routeFromHash();
-
-    // ── Mobile nav toggle ─────────────────────────────────────────────────────
-    const hamburger = document.getElementById('hamburger');
-    const navLinks  = document.getElementById('navLinks');
 
     hamburger.addEventListener('click', () => {
       navLinks.classList.toggle('open');
