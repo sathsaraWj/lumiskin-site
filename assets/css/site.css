@@ -714,6 +714,7 @@ p { text-wrap: pretty; }
   text-decoration: none;
   overflow-wrap: anywhere;
 }
+.footer-col .social-link { gap: 8px; }
 .footer-col a:hover { color: var(--purple-ink); text-decoration: underline; text-underline-offset: 3px; }
 .footer-bottom {
   margin-top: 48px;
